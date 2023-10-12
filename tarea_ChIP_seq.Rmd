@@ -1,0 +1,118 @@
+#para descargar fastq-dump y copiamos el SRA de la muestra concreta en mobaxterm#
+#si vamos a buscar marcas epigéneticas en la función peakcalling hay que poner un argumento más que es --nomodef y si trabajamos con condiciones que tienen más que una replica hay que tener en cuenta que el targegenes hay que hacer la intersección de los distintos picos de cada una de las réplicas de cada condición con la herramienta bedtools y la función intersect
+
+
+# Título
+
+#### Autores: 
+
+## Introducción
+
+### Antecedentes
+
+Un párrafo o dos describiendo la motivación o antecedentes del estudio. Así se escribe en **negrita** y *cursiva*.
+
+### Objetivo
+
+Un párrafo o dos describiendo concisamente el objetivo del estudio. 
+
+Puntuación: 0.5
+
+## Materiales y Métodos
+
+### Diseño Experimental
+
+Un párrafo para mencionar el número de acceso GSE del estudio en GEO. 
+Una lista de puntos para describir brevemente las muestras ChIP y las muestras 
+control (input o mock) que se usan en el estudio. 
+
+Una lista de puntos se especifica en Rmarkdown como sigue:
+
+  * Punto uno
+    + Subpunto uno
+    + Subpunto dos
+  
+  * Punto dos
+
+### Flujo de trabajo
+
+Describir brevemente en dos o tres párrafos el flujo de trabajo para ánalisis de datos de ChIP-seq.
+
+Añadir una representación gráfica desarrollada por vosotros del flujo de trabajo.
+
+Así se añade una imagen:
+
+![ Texto del pie de figura. ](images/workflow.jpg)
+
+Especificar los parámetros usados en los diferentes pasos del análsis.
+
+Indicar como se han integrado los resultados de las distintas réplicas y como se 
+ha usado la condición control (input o mock).
+
+Incluir y comentar el script de bash usado para el procesamiento de los datos de
+ChIP. 
+
+Puntuación: 1
+
+## Resultados 
+
+Puntuación: 6 puntos de dividirán de igual forma entre los apartados
+
+### Análisis de la distribución global del Cistroma
+
+Presentar el número de picos o regiones cis donde se une el correspondiente
+factor de transcripción o que ocupa la marca epigenética estudiada. 
+
+Representar y discutir la distribución de los picos sobre las distintas estructuras 
+génicas usando pie chart, bar plot y distancia al TSS.
+
+Añadir varias imágenes de IGV que ilustren. 
+
+### Análisis del Reguloma del correspondiente factor de transcripción o marca epigenética. 
+
+Presentar y discutir el reguloma identificado (número de genes).
+
+Añadir un enlace a un fichero con el reguloma:
+
+[Enlace a otro fichero](activated_genes_WT_with_no_Fe_1.txt)  
+
+Realizar un enriquecimiento funcional del reguloma incluyendo los gráficos y tablas
+oportunas. Discutir los resultados. 
+
+### Enriquecimiento de Motivos de DNA en los sitios de Unión
+
+Este apartado solo es aplicable si estudias un factor de transcripción. 
+
+Describir y discutir los motivos de DNA conocidos y no conocidos identificados 
+por Homer.
+
+Incluir tablas con los motivos de DNA conocidos y no conocidos identificados.
+
+Las tablas en Rmarkdown se escriben así:
+
+Término de GO | Descripción | Genes Representativos
+------------ | -------------| -------------
+Table Cell   | Cell 2       | la
+Cell 3       | Cell 4       | la
+
+## Conclusiones
+
+Relacionar todos los resultados anteriores para formular conclusiones del análisis realizado.
+
+Relacionar los resultados obtenidos con los descritos en el artículo seleccionado.
+
+Propón algún experimento que creas oportuno realizar en el laboratorio para validar los resultados obtenidos. 
+
+Puntuación: 2
+
+## Referencias
+
+En orden alfabético según el apellido del primer autor. 
+
+autores (fecha) título del artículo, título de la revista en cursiva, volumen(número), páginas.
+
+Como se refiere en el texto artículos con un único autor (Apellido del autor, año)
+Como se refiere en el texto artículos con dos autores (Apellido primer autor & Apellido segundo autor, año)
+Como se refiere en el texto artículos con más de dos autores (Apellido primer autor et al, año)
+
+Puntuación: 0.5
