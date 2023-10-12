@@ -1,0 +1,1 @@
+cmd = SOB3.narrowPeak tair10 dnaMotifs -size 100 -len 8
